@@ -27,7 +27,7 @@ function Footer() {
           <h3>Social Links</h3>
           <ul>
             <li>
-              <a href="#home">Linkedin</a>
+              <a href="#home">Tiktok</a>
             </li>
             <li>
               <a href="#skills">Facebook</a>
