@@ -11,30 +11,18 @@ import AboutMe from "./Component/AboutMe";
 import Contact from "./Component/Contact";
 import Footer from "./Component/Footer";
 import FloatingIcon from "./Component/FloatingIcon";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="wrapper">
-      {/* <!-- Nav --> */}
-      <Header />
-      {/* <!-- Hero --> */}
-      <Hero />
-      {/* <!-- Banner --> */}
-      <Banner />
-      {/* <!-- Skills --> */}
-      <Skill />
-      {/* <!-- Projects --> */}
-      <Projects />
-      {/* <!-- About Me --> */}
-      <AboutMe />
-
-      {/* <!-- Get in Touch --> */}
-      <Contact />
-
-      {/* <!-- footer --> */}
-      <Footer />
-      {/* <!-- Floating Icon --> */}
-      <FloatingIcon git />
+      <Routes>
+        <Route path="/" element={<Hero />}></Route>
+        <Route path="/skills" element={<Skill />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/about" element={<AboutMe />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
     </div>
   );
 }
